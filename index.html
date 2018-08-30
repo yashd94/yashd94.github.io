@@ -23,15 +23,15 @@
   
 <body>
   <style>
+    
     /* Styling the tab layout */
-
     .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: SteelBlue;
     }
 
-    /* Styping the buttons */
+    /* Styling the buttons */
     .tab button {
     background-color: inherit;
     float: left;
@@ -44,7 +44,7 @@
     }
 
     /* Changing button color on hover */
-    .tab hover {
+    .tab button:hover {
     background-color: #ddd;
     }
 
@@ -109,7 +109,7 @@
         tabcontent[i].style.display="none";
       }
       
-      tablinks = document.getElementByClassName("tablinks");
+      tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.lenght; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
